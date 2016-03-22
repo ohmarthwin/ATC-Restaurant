@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText passwordEditText;
     private Button loginButton;
     private String userString, passwordString;
+    private MyManage myManage;
 
 
 
@@ -25,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
 
         // Bind Widget
         bindWidget();
+        //Request Database
+        myManage = new MyManage(this);
 
         //Button Controller
         buttonController();
